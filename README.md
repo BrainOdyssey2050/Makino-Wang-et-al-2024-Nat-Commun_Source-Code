@@ -1,5 +1,37 @@
-# **Distinct cross-regional control of amygdalar dynamics reliably reflects fear memory age**
+# **Distinct Cross-Regional Control of Amygdalar Dynamics Reliably Reflects Fear Memory Age**
 
-- For the analysis from Figure 1 ~ 3, please check the folder `Correlation_and_Modulation_Analysis`.
-- For the LightGBM analysis using non-freezing or freezing data, go to `MemoryAge_WinLen_5_Step_0.5` or `MemoryAge_WinLen_5_Step_0.5_FREEZING_ONLY` for details. These folders (especially in the sub-folder 'code') contain files that are used for modeling, as well as the analysis notebooks for figure generation (with a 'Figure_' prefix).
-- For the Transformer analysis using non-freezing or freezing data, go to `MemoryAge_Transformer_xLARGE` or `MemoryAge_Transformer_xLARGE_using_FREEZING_ONLY`. These folders (especially in the sub-folder 'code') contain files that are used for modeling, as well as the analysis notebooks for figure generation (with a 'Figure_' prefix). We acknowledge that we use the backbone IO strategy in TorchEEG, [TorchEEG](https://github.com/torcheeg/torcheeg).
+## Code and Demonstrations
+
+- **Analysis for Figures 1-3**:
+  - Check the `Correlation_and_Modulation_Analysis` folder for the following demos with expected outputs:
+    - `PSD_LFP.m`: Calculates the power spectral density of LFP (Fig. 1, Supplementary Fig. 1).
+    - `CFC_Phase_Amp.m`: Calculates cross-frequency phase-amplitude coupling of LFP (Fig. 2, Supplementary Fig. 1).
+    - `Corr_EnvCorr_Env.m`: Calculates the correlation of instantaneous amplitude of LFP across 3 regions (Fig. 3, Supplementary Fig. 2).
+
+- **LightGBM Analysis**:
+  - For non-freezing or freezing data analysis, visit `MemoryAge_WinLen_5_Step_0.5/code` or `MemoryAge_WinLen_5_Step_0.5_FREEZING_ONLY/code`. These folders contain files for modeling and analysis notebooks with expected outputs for figure generation (notebooks contain 'Figure' in their names). Follow the STEPS provided.
+
+- **Transformer Analysis**:
+  - For non-freezing or freezing data analysis, visit `MemoryAge_Transformer_xLARGE/code` or `MemoryAge_Transformer_xLARGE_using_FREEZING_ONLY/code`. Key files include:
+    - `MemoryAge ViT CrossSubject NonFreezing.ipynb`: Main file for Transformer training.
+    - `Using_Attention_to_analyze_Transformer_decision - Comparing Recent Remote in Accurate (or Inaccurate) - BroaderWelch - without Corr - Figure 5_5.ipynb`: For attention-guided analysis.
+    - `Perturbation_results_analysis_Unnormalized - Figure6_2.ipynb`: For perturbation analysis.
+	- Please also check the analysis in notebooks with the expected outputs (notebooks contain 'Figure' in their names).
+  - Note: It is recommended not to rerun the notebooks as the outputs are already displayed.
+
+## Reproduction Requirements
+- **System Requirements**:
+  - OS: Windows 10 Professional (Version 22H2)
+  - Code Editor: VSCode (Version 1.88.1)
+  - Package Manager: Conda (Version 4.10.3)
+- **Hardware Requirements**:
+  - CPU: Intel(R) Core(TM) i5-9400F @ 2.90GHz
+  - GPU: Nvidia GeForce 2080Ti
+- **Setup**:
+  - Conda environment installation: Run `conda env create -f LFP_TRANS_LOCAL.yml` (takes approx. 10 mins).
+- **Expected Runtime**:
+  - LightGBM: Approximately 30 minutes.
+  - Transformer: Approximately 12 hours (depending on the hardware).
+- **Acknowledgments**:
+  - We utilize the backbone IO strategy from [TorchEEG](https://github.com/torcheeg/torcheeg).
+
