@@ -1,12 +1,12 @@
-# **Distinct Cross-Regional Control of Amygdalar Dynamics Reliably Reflects Fear Memory Age**
+# **Distinct Multi-Regional Control of Amygdalar Dynamics Reliably Reflects Fear Memory Age**
 
 ## Code and Demonstrations
 
-- **Analysis for Figures 1-3**:
+- **Analysis of power, phase-amplitude coupling and instantaneous amplitude correlation**:
   - Check the `Correlation_and_Modulation_Analysis` folder for the following demos with expected outputs:
-    - `PSD_LFP.m`: Calculates the power spectral density of LFP (Fig. 1, Supplementary Fig. 1).
-    - `CFC_Phase_Amp.m`: Calculates cross-frequency phase-amplitude coupling of LFP (Fig. 2, Supplementary Fig. 1).
-    - `Corr_EnvCorr_Env.m`: Calculates the correlation of instantaneous amplitude of LFP across 3 regions (Fig. 3, Supplementary Fig. 2).
+    - `PSD_LFP.m`: Calculates the power spectral density of LFP.
+    - `CFC_Phase_Amp.m`: Calculates cross-frequency phase-amplitude coupling of LFP.
+    - `Corr_EnvCorr_Env.m`: Calculates the correlation of instantaneous amplitude of LFP across 3 regions.
 
 - **LightGBM Analysis**:
   - For non-freezing or freezing data analysis, visit `MemoryAge_WinLen_5_Step_0.5/code` or `MemoryAge_WinLen_5_Step_0.5_FREEZING_ONLY/code`. These folders contain files for modeling and analysis notebooks with expected outputs for figure generation (notebooks contain 'Figure' in their names). Follow the STEPS provided.
