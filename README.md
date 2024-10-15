@@ -1,4 +1,4 @@
-# **Distinct Multi-Regional Control of Amygdalar Dynamics Reliably Reflects Fear Memory Age**
+# **Multi-Regional Control of Amygdalar Dynamics Reliably Reflects Fear Memory Age**
 
 ## Code and Demonstrations
 
